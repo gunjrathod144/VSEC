@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #67A2C5;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.auth{
+    display: flex;
+    gap: 20px;
+}
+
+.menu a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a.active{
+    color: #FFB6A6;
+}
+
+.auth button:hover{
+    background-color: #9BCEC1;
+}
+
+.login-btn{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.signup-btn{
+   background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
