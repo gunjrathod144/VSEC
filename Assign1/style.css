@@ -1,27 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     background-color: #f2f2f2;
 }
 
-nav { 
-    text-align: center;
+
+/* Navigation */
+
+nav {
     background-color: #333;
     padding: 15px;
+    text-align: center;
 }
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-}
-
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin: 20px;
     font-size: 18px;
 }
 
@@ -29,32 +24,62 @@ nav a:hover {
     color: yellow;
 }
 
+
+/* Main Content */
+
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
+    background-color: white;
+    margin: 20px;
 }
 
-input {
+
+/* Heading */
+
+h1 {
+    color: purple;
+}
+
+
+/* Paragraph */
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* Images */
+
+img {
     width: 250px;
-    padding: 10px;
+    height: 180px;
     margin: 10px;
 }
 
+
+
+/* Button */
+
 button {
-    padding: 10px 20px;
-    background: green;
+    background-color: purple;
     color: white;
+    padding: 10px 20px;
     border: none;
-  
 }
+
 
 button:hover {
-    background: darkgreen;
+    background-color: darkblue;
 }
 
-p {
-   align-items: center;
-   font-size: larger;
-   color: blue;
 
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }

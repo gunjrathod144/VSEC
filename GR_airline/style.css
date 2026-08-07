@@ -56,3 +56,19 @@ nav a{
     padding: 10px 20px;
     border-radius: 8px;
 }
+
+
+
+.flight-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.flight-section img {
+    width: 400px;
+}
+
+.flight-section p {
+    font-size: 18px;
+    color: #444;
+}
