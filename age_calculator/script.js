@@ -7,6 +7,9 @@ function calculateAge() {
         (today.getFullYear() - dob.getFullYear()) * 12
         + (today.getMonth() - dob.getMonth());
 
+    let years = Math.floor(months / 12);
+    let remainingMonths = months % 12;
+
     document.getElementById("result").innerHTML =
-        "You are " + months + " months old";
+        "You are " + years + " years and " + remainingMonths + " months old";
 }
