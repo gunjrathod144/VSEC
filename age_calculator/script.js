@@ -1,15 +1,21 @@
 function calculateAge() {
+    let dob = document.getElementById("dob").value;
 
-    let dob = new Date(document.getElementById("dob").value);
+    let birthDate = new Date(dob);
     let today = new Date();
 
-    let months =
-        (today.getFullYear() - dob.getFullYear()) * 12
-        + (today.getMonth() - dob.getMonth());
+    let ageYears = today.getFullYear() - birthDate.getFullYear();
+    let ageMonths = today.getMonth() - birthDate.getMonth();
 
-    let years = Math.floor(months / 12);
-    let remainingMonths = months % 12;
+    if (today.getDate() < birthDate.getDate()) {
+        ageMonths--;
+    }
+
+    if (ageMonths < 0) {
+        ageYears--;
+        ageMonths += 12;
+    }
 
     document.getElementById("result").innerHTML =
-        "You are " + years + " years and " + remainingMonths + " months old";
+        "You are " + ageYears + " years and " + ageMonths + " months old";
 }
