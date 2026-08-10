@@ -1,15 +1,28 @@
-function calculateAge() 
-{
-
+function calculateAge() {
     let dob = document.getElementById("dob").value;
 
-    let birthYear = new Date(dob).getFullYear();
+    if (!dob) {
+        document.getElementById("result").innerHTML =
+            "Please select your date of birth";
+        return;
+    }
 
-    let currentYear = new Date().getFullYear();
+    let birthDate = new Date(dob);
+    let today = new Date();
 
-    let age = currentYear - birthYear;
+    let ageYears = today.getFullYear() - birthDate.getFullYear();
+    let ageMonths = today.getMonth() - birthDate.getMonth();
+
+    if (today.getDate() < birthDate.getDate()) {
+        ageMonths--;
+    }
+
+    // Adjust years and months
+    if (ageMonths < 0) {
+        ageYears--;
+        ageMonths += 12;
+    }
 
     document.getElementById("result").innerHTML =
-    "Your Age is " + age + " years";
-
+        "Your Age is " + ageYears + " years and " + ageMonths + " months";
 }
