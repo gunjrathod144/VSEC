@@ -1,1 +1,19 @@
 
+div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: blue;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+}
