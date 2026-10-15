@@ -1,0 +1,17 @@
+
+{
+  "name": "gr-airways-backend",
+  "version": "1.0.0",
+  "description": "GR Airways Airline Reservation System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mongodb": "^7.7.0"
+  }
+}

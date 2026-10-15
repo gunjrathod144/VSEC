@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5edf3;
+}
+
+/* Navigation */
+nav {
+  background: #913d72;
+  padding: 18px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #913d72;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Form */
+form {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Input */
+input {
+  padding: 10px;
+  width: 60%;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  margin: 5px;
+  background: #913d72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Table */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #ead3e2;
+}
+
+/* Page Link */
+.page-link {
+  display: block;
+  text-align: center;
+  margin: 25px;
+  color: #913d72;
+  font-weight: bold;
+}

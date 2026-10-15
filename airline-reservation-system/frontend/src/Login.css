@@ -1,0 +1,181 @@
+/* ===== GR AIRWAYS LOGIN & SIGNUP PAGES ===== */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at 15% 15%, #d8e9ff 0, transparent 35%),
+    linear-gradient(135deg, #edf4ff, #f7f9fd 55%, #dceaff);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+  padding: 42px 38px;
+  background: #ffffff;
+  border: 1px solid #e5ecf6;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(16, 39, 71, 0.13);
+  text-align: center;
+  animation: loginAppear 0.45s ease;
+}
+
+.login-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #102747, #2878d4);
+  color: #ffffff;
+  font-size: 38px;
+  box-shadow: 0 10px 25px rgba(40, 120, 212, 0.25);
+}
+
+.login-box h1 {
+  margin: 0 0 12px;
+  color: #102747;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.login-box > p {
+  margin: 0 0 28px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.login-input {
+  margin-bottom: 21px;
+  text-align: left;
+}
+
+.login-input label {
+  display: block;
+  margin-bottom: 9px;
+  color: #243b5a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login-input input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #d8e1ed;
+  border-radius: 10px;
+  background: #f9fbfe;
+  color: #172b4d;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.login-input input::placeholder {
+  color: #a0aec0;
+}
+
+.login-input input:focus {
+  border-color: #2878d4;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(40, 120, 212, 0.12);
+}
+
+.login-box form > button {
+  width: 100%;
+  margin-top: 7px;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #102747, #2878d4);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(40, 120, 212, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-box form > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(40, 120, 212, 0.28);
+}
+
+.login-box form > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+}
+
+.login-box > p:last-child {
+  margin: 24px 0 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.login-box > p:last-child button {
+  width: auto;
+  margin: 0;
+  padding: 4px 6px;
+  border: none;
+  background: transparent;
+  color: #2878d4;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.login-box > p:last-child button:hover {
+  color: #102747;
+  text-decoration: underline;
+}
+
+.login-box button:focus-visible {
+  outline: 3px solid #8fc3ff;
+  outline-offset: 3px;
+}
+
+@keyframes loginAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .login-page {
+    padding: 18px 14px;
+  }
+
+  .login-box {
+    padding: 32px 22px;
+    border-radius: 18px;
+  }
+
+  .login-box h1 {
+    font-size: 26px;
+  }
+
+  .login-icon {
+    width: 66px;
+    height: 66px;
+    font-size: 32px;
+  }
+}
